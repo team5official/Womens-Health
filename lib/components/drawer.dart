@@ -75,6 +75,18 @@ class DrawerPT extends StatelessWidget {
                           onTap: () {},
                         ),
                         ListTileWidget(
+                          icon: Icons.assessment,
+                          text: 'BMI Calculator',
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => BMI_InputPage(),
+                              ),
+                            );
+                          },
+                        ),
+                        ListTileWidget(
                           icon: Icons.local_hospital,
                           text: 'Medical History',
                           onTap: () {},
