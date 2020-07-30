@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pt/pregnancy.dart';
 import 'package:pt/signup.dart';
 import 'signin.dart';
 import 'various_tabs.dart';
@@ -66,10 +65,28 @@ class _HomeScreenState extends State<HomeScreen> {
                 image2: 'images/pregnant.png',
                 text2: 'Pregnancy',
                 route1: () {
-                  Navigator.pushNamed(context, VariousTabs.id);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VariousTabs(
+                        image: 'images/mentalHealth.png',
+                        text: 'Mental Health',
+                      ),
+                    ),
+                  );
+                  //Navigator.pushNamed(context, VariousTabs.id);
                 },
                 route2: () {
-                  Navigator.pushNamed(context, Pregnancy.id);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VariousTabs(
+                        image: 'images/pregnancy.jpeg',
+                        text: 'Pregnancy',
+                      ),
+                    ),
+                  );
+                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
               ),
               ModifiedContainer(
@@ -78,10 +95,28 @@ class _HomeScreenState extends State<HomeScreen> {
                 image2: 'images/apple.png',
                 text2: 'Nutrition',
                 route1: () {
-                  Navigator.pushNamed(context, Pregnancy.id);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VariousTabs(
+                        image: 'images/periodD.jpeg',
+                        text: 'Periods',
+                      ),
+                    ),
+                  );
+                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
                 route2: () {
-                  Navigator.pushNamed(context, Pregnancy.id);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VariousTabs(
+                        image: 'images/Nutrition.jpeg',
+                        text: 'Nutrition',
+                      ),
+                    ),
+                  );
+                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
               ),
               ModifiedContainer(
@@ -90,10 +125,28 @@ class _HomeScreenState extends State<HomeScreen> {
                 image2: 'images/Report.png',
                 text2: 'Independent',
                 route1: () {
-                  Navigator.pushNamed(context, Pregnancy.id);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VariousTabs(
+                        image: 'images/GeneralHealthD.jpg',
+                        text: 'General Health',
+                      ),
+                    ),
+                  );
+                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
                 route2: () {
-                  Navigator.pushNamed(context, Pregnancy.id);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VariousTabs(
+                        image: 'images/independent.jpg',
+                        text: 'Independent',
+                      ),
+                    ),
+                  );
+                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
               )
             ],

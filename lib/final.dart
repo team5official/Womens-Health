@@ -12,23 +12,59 @@ class _FinalState extends State<Final> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff005e54),
       appBar: AppBar(
         title: Text(
           'About',
         ),
+        backgroundColor: Color(0xff005e54),
       ),
-      body: StreamBuilder(
-        stream: Firestore.instance.collection('MentalHealth').snapshots(),
-        builder: (context, snapshot) {
-          if (!snapshot.hasData) return Text('Loading data.....Please Wait!');
-          return Column(
-            children: <Widget>[
-              Text(
-                snapshot.data.documents[0]['data'],
-              )
-            ],
-          );
-        },
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: Colors.white,
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: StreamBuilder(
+                stream: Firestore.instance.collection('info').snapshots(),
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData)
+                    return Text('Loading data.....Please Wait!');
+                  return Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                        child: Text(
+                          'What is it ?',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                        child: Text(
+                          snapshot.data.documents[0]['Symptoms'],
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'Bitter',
+                            fontWeight: FontWeight.w600,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
