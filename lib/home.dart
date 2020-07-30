@@ -157,5 +157,4 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-
 //Configured the code it is okay no problem
