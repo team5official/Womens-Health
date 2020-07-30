@@ -7,7 +7,9 @@ Steps to run this Application in your System:
 5) Get All Dependencies
 6) Check wheather your sdk path is define or not in sdk manager of android studio
 7) Make sure your application is in project state not android this is an important step
+8) Also make sure that indentation of pubspec.yaml is proper otherwise the application lead to crash
 8) Run The Application
+
 
 # pt
 
