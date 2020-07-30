@@ -1,3 +1,5 @@
+![Github](https://img.shields.io/badge/Language-Dart-blue)
+![Github](https://img.shields.io/badge/Language-Ruby-red)
 # Steps to run this Application in your System:
 1)  Download `Android Studio`
 2)  Download `Flutter` And `Dart Plugins` In It
