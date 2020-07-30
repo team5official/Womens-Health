@@ -1,14 +1,14 @@
-Steps to run this Application in your System:
-1) Download Android Studio
-2) Download Flutter And Dart Plugins In It
-3) Setup the sdk and avd managers of android studio properly
-4) Also download the ios or android devices in Emulator section
-5) Copy The Clone Link
-6) Paste it into VCS of Android Studio
-7) Accept all the permissions
-8) Open the cloned application in android studio
-9) Go to pubspec.yaml -> Click on pub get
-10) Get All Dependencies
+# Steps to run this Application in your System:
+1)  Download `Android Studio`
+2)  Download `Flutter` And `Dart Plugins` In It
+3)  Setup the sdk and avd managers of android studio properly
+4)  Also download the ios or android devices in Emulator section
+5)  Copy The Clone Link `https://github.com/team5official/Womens-Health.git`
+6)  Paste it into `VCS` of Android Studio
+7)  Accept all the permissions
+8)  Open the cloned application in android studio
+9)  Go to pubspec.yaml -> Click on pub get
+10) Get `All Dependencies`
 11) Check wheather your sdk path is define or not in sdk manager of android studio
 12) Make sure your application is in project state not android this is an important step
 13) Also make sure that indentation of pubspec.yaml is proper otherwise the application lead to crash
@@ -17,7 +17,7 @@ Steps to run this Application in your System:
 
 # pt
 
-A new Flutter application.
+A new `Flutter application`.
 
 ## Getting Started
 
