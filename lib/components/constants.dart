@@ -29,7 +29,6 @@ const kTextfieldDecoration = InputDecoration(
   ),
 );
 
-
 //BMI
 
 const kBottomContainerHeight = 68.0;
@@ -75,4 +74,3 @@ const kBodyTextStyle = TextStyle(
   color: Colors.green,
   fontWeight: FontWeight.bold,
 );
-
