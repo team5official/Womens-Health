@@ -4,6 +4,7 @@ import 'package:pt/signin.dart';
 import 'package:pt/signup.dart';
 import 'list_tile.dart';
 import 'package:pt/main.dart';
+import 'package:pt/bmiInputPage.dart';
 
 class DrawerPT extends StatelessWidget {
   const DrawerPT({
