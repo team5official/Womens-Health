@@ -1,3 +1,14 @@
+Steps to run this Application in your System:
+1) Copy The Clone Link
+2) Paste it into VCS of Android Studio
+3) Accept all the permissions
+4) Open the cloned application in android studio
+4) Go to pubspec.yaml -> Click on pub get
+5) Get All Dependencies
+6) Check wheather your sdk path is define or not in sdk manager of android studio
+7) Make sure your application is in project state not android this is an important step
+8) Run The Application
+
 # pt
 
 A new Flutter application.
