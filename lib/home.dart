@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage(
-                      'images/dash.jpg',
+                      'images/dash.jpeg',
                     ),
                   ),
                 ),
@@ -71,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/mentalHealth.png',
                         text: 'Mental Health',
+                        docfromhome: 1,
                       ),
                     ),
                   );
@@ -83,6 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/pregnancy.jpeg',
                         text: 'Pregnancy',
+                        docfromhome: 5,
                       ),
                     ),
                   );
@@ -101,6 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/periodD.jpeg',
                         text: 'Periods',
+                        docfromhome: 4,
                       ),
                     ),
                   );
@@ -113,6 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/Nutrition.jpeg',
                         text: 'Nutrition',
+                        docfromhome: 3,
                       ),
                     ),
                   );

@@ -1,21 +1,31 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class Final extends StatefulWidget {
-  static const id = 'mh_about';
+class Final extends StatelessWidget {
+  static const id = 'finale';
 
-  @override
-  _FinalState createState() => _FinalState();
-}
+  Final({
+    this.titleText,
+    this.documentNum,
+    this.fieldName1,
+    this.topicTitle1,
+    this.topicTitle2,
+    this.fieldName2,
+  });
+  final String titleText;
+  final documentNum;
+  final fieldName1;
+  final topicTitle1;
+  final topicTitle2;
+  final fieldName2;
 
-class _FinalState extends State<Final> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff005e54),
       appBar: AppBar(
         title: Text(
-          'About',
+          titleText,
         ),
         backgroundColor: Color(0xff005e54),
       ),
@@ -34,29 +44,64 @@ class _FinalState extends State<Final> {
                 builder: (context, snapshot) {
                   if (!snapshot.hasData)
                     return Text('Loading data.....Please Wait!');
-                  return Column(
+
+                  var datas1 = snapshot.data.documents[documentNum][fieldName1];
+                  var datas2 = snapshot.data.documents[documentNum][fieldName2];
+                  var finale1 = datas1.replaceAll("//n", "\n");
+                  var finale2 = datas2.replaceAll("//n", "\n");
+
+                  return ListView(
                     children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
-                        child: Text(
-                          'What is it ?',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w900,
+                      Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                            child: Text(
+                              topicTitle1,
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w900,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
-                        child: Text(
-                          snapshot.data.documents[0]['Symptoms'],
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'Bitter',
-                            fontWeight: FontWeight.w600,
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                            child: Text(
+                              finale1,
+//                          snapshot.data.documents[0]['About'],
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Bitter',
+                                fontWeight: FontWeight.w600,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
                           ),
-                          textAlign: TextAlign.center,
-                        ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                            child: Text(
+                              topicTitle2,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w900,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                            child: Text(
+                              finale2,
+//                          snapshot.data.documents[0]['About'],
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Bitter',
+                                fontWeight: FontWeight.w600,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   );
