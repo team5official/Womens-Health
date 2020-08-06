@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pt/domestic_abuse.dart';
 import 'package:pt/signup.dart';
 import 'signin.dart';
 import 'various_tabs.dart';
@@ -71,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/mentalHealth.png',
                         text: 'Mental Health',
-                        docfromhome: 1,
+                        docfromhome: 2,
                       ),
                     ),
                   );
@@ -84,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/pregnancy.jpeg',
                         text: 'Pregnancy',
-                        docfromhome: 5,
+                        docfromhome: 6,
                       ),
                     ),
                   );
@@ -103,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/periodD.jpeg',
                         text: 'Periods',
-                        docfromhome: 4,
+                        docfromhome: 5,
                       ),
                     ),
                   );
@@ -116,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context) => VariousTabs(
                         image: 'images/Nutrition.jpeg',
                         text: 'Nutrition',
-                        docfromhome: 3,
+                        docfromhome: 4,
                       ),
                     ),
                   );
@@ -124,17 +125,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
               ModifiedContainer(
-                image1: 'images/GeneralH.png',
-                text1: 'General Health',
+                image1: 'images/domesticV.jpg',
+                text1: 'Domestic Abuse',
                 image2: 'images/Report.png',
                 text2: 'Independent',
                 route1: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => VariousTabs(
-                        image: 'images/GeneralHealthD.jpg',
-                        text: 'General Health',
+                      builder: (context) => Domestic_Abuse(
+                        imagefromD: 'images/domesticVhome.jpg',
                       ),
                     ),
                   );
