@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:pt/News.dart';
 import 'package:pt/bmiInputPage.dart';
 import 'package:pt/components/homeRaisedButton.dart';
+import 'package:pt/myth_busters.dart';
 import 'package:pt/signin.dart';
 import 'package:pt/signup.dart';
 import 'list_tile.dart';
@@ -63,7 +65,14 @@ class DrawerPT extends StatelessWidget {
                         ListTileWidget(
                           icon: Icons.book,
                           text: 'News',
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => News_Feed(),
+                              ),
+                            );
+                          },
                         ),
                         ListTileWidget(
                           icon: Icons.message,
@@ -108,9 +117,16 @@ class DrawerPT extends StatelessWidget {
                           onTap: () {},
                         ),
                         ListTileWidget(
-                          icon: Icons.search,
-                          text: 'Search',
-                          onTap: () {},
+                          icon: Icons.warning,
+                          text: 'Myth Busters',
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Myth_Busters(),
+                              ),
+                            );
+                          },
                         ),
                         ListTileWidget(
                           icon: Icons.queue,

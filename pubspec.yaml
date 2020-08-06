@@ -32,6 +32,8 @@ dependencies:
   cloud_firestore: ^0.13.7
   firebase_auth: ^0.16.1
   font_awesome_flutter: ^8.8.1
+  http: ^0.12.2
+  webview_flutter: ^0.3.22+1
 
 dev_dependencies:
   flutter_test:
