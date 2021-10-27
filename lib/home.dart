@@ -9,7 +9,6 @@ import 'components/homeRaisedButton.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = 'home';
-  // This widget is the root of your application.
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -160,5 +159,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-//Configured the code it is okay no problem
