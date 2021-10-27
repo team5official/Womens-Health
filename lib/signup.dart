@@ -92,7 +92,7 @@ class _SignUpState extends State<SignUp> {
                   )),
             ),
             Text(
-              'By creating an account you agree to our terms of service and privacy policy',
+              'By creating an account you agree to our terms of service and privacy policy.',
             ),
             RoundButton(
               text: 'SignUp',

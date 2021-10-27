@@ -22,14 +22,3 @@ class pt extends StatelessWidget {
     );
   }
 }
-
-////Terms and conditions
-////Info from verified source
-////Try to promote ayurvedic
-////No blame game
-////Exercise and meditation
-////.gov info --> Verified
-////Mention reference
-
-
-//Changes
