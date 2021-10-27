@@ -75,7 +75,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   );
-                  //Navigator.pushNamed(context, VariousTabs.id);
                 },
                 route2: () {
                   Navigator.push(
@@ -88,7 +87,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   );
-                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
               ),
               ModifiedContainer(
@@ -107,7 +105,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   );
-                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
                 route2: () {
                   Navigator.push(
@@ -120,7 +117,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   );
-                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
               ),
               ModifiedContainer(
@@ -137,7 +133,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   );
-                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
                 route2: () {
                   Navigator.push(
@@ -149,7 +144,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   );
-                  //Navigator.pushNamed(context, Pregnancy.id);
                 },
               )
             ],
